@@ -1,0 +1,2 @@
+pysimplegui
+mysql-connector-python

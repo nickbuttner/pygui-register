@@ -1,12 +1,12 @@
 import PySimpleGUI as gui 
-from costumer_list import costumer_list
+from customer_list import customer_list
 
 gui.theme('DarkAmber')
 
-class show_costumer:
+class show_customer:
     def __init__(self):
         content = []
-        result = costumer_list()
+        result = customer_list()
 
         for i, each, in enumerate(result):
             id = each[0]
@@ -26,5 +26,5 @@ class show_costumer:
     def show(self):
         self.values = self.screen.Read()
 
-customer = show_costumer()
+customer = show_customer()
 customer.show()

@@ -12,7 +12,7 @@ if conn.is_connected():
     print("Conectado!")
 
     cursor = conn.cursor()
-    query = "INSERT INTO produtos (name, price, quantity) VALUES ("
+    query = "INSERT INTO produtos (nome, preco, quantidade) VALUES ("
     query += " '" +product.name+"' , " +str(product.price) + " , " + str(product.quantity) + " )"
 
     cursor.execute(query)

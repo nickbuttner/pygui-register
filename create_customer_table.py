@@ -8,7 +8,7 @@ if conn.is_connected():
     query = "create table clientes (" 
     query += " id int not null primary key auto_increment,  " 
     query += " nome varchar(100), " 
-    query += " email_accept boolean, " 
+    query += " email boolean, " 
     query += " sexo varchar(50), "
     query += " idade int) "
     cursor.execute(query)

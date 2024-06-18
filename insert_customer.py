@@ -12,7 +12,7 @@ if conn.is_connected():
     print("Connectado!")
 
     cursor = conn.cursor()
-    query = "INSERT INTO costumers (name, email_accept, gender, age) VALUES ("
+    query = "INSERT INTO customers (name, email_accept, gender, age) VALUES ("
     query += " '" +customer.name+"' , " +str(customer.email_accept) + " , '" + customer.gender + "' , " + str(customer.age) + " )"
     cursor.execute(query)
     conn.commit()

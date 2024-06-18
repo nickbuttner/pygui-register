@@ -1,16 +1,16 @@
 from Connection import Connection
-from select_costumers import select_costumers
+from select_customers import select_customers
 
-def costumer_list():
+def customer_list():
     connection = Connection()
     conn = connection.open()
 
     if conn.is_connected():
         cursor = conn.cursor()
 
-        result = select_costumers(cursor)
+        result = select_customers(cursor)
         cursor.close()
         conn.close()
         return result     
 
-costumer_list()
+customer_list()
